@@ -1,2 +1,10 @@
-# TT23.2
-Repositório voltado para o projeto desenvolvido durante o treinamento técnico de 2023.2 da EJCM
+<h1>
+  <img src="src/Assets/Logo.svg" align="right"/>
+  Treinamento Técnico 2023.2
+</h1>
+
+
+# 🔸Motivação👊🔸
+
+
+# 🔸Concepção⚙️🔸
