@@ -1,12 +1,11 @@
 <h1>
-  <img src="./LogoTT23_2.svg" align="right" width="350px"/>
+  <img src="./LogoTT23_2.svg" align="right" width="340px"/>
   🔹Treinamento Técnico 2023.2🔹
 </h1>
 Este repositório é dedicado ao projeto contruído pelos intrutores desenvolvedores do Treinamento Técnico de 2023.2 ofertado pela EJCM🏯.
 
 ### 🔗Links
 - [Protótipo no Figma](https://www.figma.com/file/kCyEHO7BBkWafjfb2S3Fgs/Prot%C3%B3tipo---Gakalu?type=design&node-id=0%3A1&mode=design&t=lREN3Xy4N159TgtY-1)
-- 
 
 
 ## 🔹Sobre o Projeto🔹
@@ -17,4 +16,4 @@ e cartões pré - pagos para os principais serviços de streaming.
 
 
 
-# 🔸Concepção⚙️🔸
+# 🔹Concepção⚙️🔹
