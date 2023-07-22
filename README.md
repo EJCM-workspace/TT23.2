@@ -1,5 +1,5 @@
 <h1>
-  <img src="./LogoTT23_2.svg" align="right" width="400px"/>
+  <img src="./LogoTT23_2.svg" align="right" width="350px"/>
   🔹Treinamento Técnico 2023.2🔹
 </h1>
 Este repositório é dedicado ao projeto contruído pelos intrutores desenvolvedores do Treinamento Técnico de 2023.2 ofertado pela EJCM🏯.
