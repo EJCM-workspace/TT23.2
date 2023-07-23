@@ -14,7 +14,7 @@ e suas informações são descritas mais abaixo.
 <br/>
 <br/>
 
-## 🔹Sobre o Projeto🔹
+## 🔹Sobre o Projetoℹ️🔹
 **Gakalu Games** é um marketplace  voltado para o comércio de jogos eletrônicos, peças de computador, acessórios novos e semi-novos.
 Seu objetivo é atender às necessidades tecnológicas do público jovem-adulto conectando pequenas e grandes lojas ao público geral.
 Como diferencial o Gakalu oferece um programa de fidelidade para os usuários com direito a retirada de brindes como cupons de desconto
