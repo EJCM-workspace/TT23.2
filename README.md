@@ -1,5 +1,6 @@
+<img src="./readMeAssets/upperBar.svg" width="100%"/>
 <h1>
-  <img src="./LogoTT23_2.svg" align="right" width="310px"/>
+  <img src="./readMeAssets/LogoTT23_2.svg" align="right" width="310px"/>
   🔹Treinamento Técnico 2023.2🔹
 </h1>
 
