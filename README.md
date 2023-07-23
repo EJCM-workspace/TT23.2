@@ -1,5 +1,6 @@
+<img src="./readMeAssets/upperBar.svg" width="100%"/>
 <h1>
-  <img src="./LogoTT23_2.svg" align="right" width="310px"/>
+  <img src="./readMeAssets/LogoTT23_2.svg" align="right" width="310px"/>
   🔹Treinamento Técnico 2023.2🔹
 </h1>
 
@@ -13,10 +14,10 @@ e suas informações são descritas mais abaixo.
 <br/>
 <br/>
 
-## 🔹Sobre o Projeto🔹
+## 🔹Sobre o Projetoℹ️🔹
 
 
-# 🔹Desenvolvimento⚙️🔹
+## 🔹Desenvolvimento⚙️🔹
 O projeto consiste numa aplicação feita em ReactJS<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="15em"/>
 a base de Typescript<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="15em"/>, e abrange a maior
 parte dos conceitos de desenvolvimento Web e do framework em si e da linguagem utilizada, tais como **Componentização**, **Data Binding**, **Formulários**
