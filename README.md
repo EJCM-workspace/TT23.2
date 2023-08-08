@@ -9,7 +9,7 @@ O projeto desenvolvido neste treinamento foi o **Gakalu Games**, que por sua vez
 e suas informações são descritas mais abaixo.
 
 ### 🔗Links
-- [Protótipo no Figma](https://www.figma.com/file/Z5Bh85ts1NvzFhxaHeWfPJ/Untitled?type=design&node-id=0%3A1&mode=design&t=8v0iZgj5piuSIZw8-1)
+- [Protótipo no Figma](https://www.figma.com/file/b7gjTgXDVynzSZir67xgu7/Samuraiva?type=design&node-id=79%3A133&mode=design&t=smEgrYvBORTlmrP7-1)
 
 <br/>
 <br/>
