@@ -1,3 +1,5 @@
+import '@fontsource/poppins';
+
 export const global = {
     colors: {
         branco: '#FFFFFF',
@@ -7,5 +9,8 @@ export const global = {
         offWhite:'#FEF2E4',
         cinza:'#AAAAAA',
         cinzaEscuro: '#262626'
+    },
+    fonts: {
+        poppins: 'Poppins'
     }
 }
