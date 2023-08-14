@@ -11,23 +11,25 @@ import Curtidas from '../../assets/Home/like.svg';
 import AnaImg from '../../assets/Home/Story/image 18.png';
 
 type tweetInfo = {
-    foto?: string;
+    foto: string;
 
-    username?: string;
-    nickname?: string;
-    nickLink?: string;
+    username: string;
+    nickname: string;
+    nickLink: string;
 
-    livro?: string;
-    texto?: string;
+    livro: string;
+    texto: string;
 
-    comentarios?: number;
-    retweets?: number;
-    curtidas?: number;
+    comentarios: number;
+    retweets: number;
+    curtidas: number;
 }
 
-export default function Tweet(
-    {foto, username, nickname, nickLink, livro, texto, comentarios, retweets, curtidas}: tweetInfo
-) {
+export default function Tweet({foto, username, nickname, nickLink, livro, texto, comentarios, retweets, curtidas}: tweetInfo) {
+
+
+    
+
     return (
         <TweetDiv>
             <UserPic src={AnaImg}/>
