@@ -9,78 +9,83 @@ import postServices from "../../services/postServices";
 import userServices from "../../services/userServices";
 
 type tweetInfo = {
-    foto: string;
 
-    username: string;
-    nickname: string;
-    nickLink: string;
+    bookTitle: string;
+    content: string;
 
-    livro: string;
-    texto: string;
-
-    comentarios: number;
-    retweets: number;
-    curtidas: number;
+    commentCount: number;
+    repostCount: number;
+    bookmarkCount: number;
 }
 
 type profileInfo = {
-    nome: string;
-    foto: string;
+    id: number;
+    name: string;
+    userName: string;
+    profilePic: string;
+    email: string;
+    birthday: string;
+    phone: string;
+    cpf: string;
 }
 
 
 export default function Home() {
 
-    const nomes = ['iago', 'josé', 'thiago', 'gabriel', 'bruno', 'vinny'];
-
     const [tweets, setTweets] = useState<tweetInfo[]>([])
+    const [carregandoTweets, setCarregandoTweets] = useState(true); 
     const [stories, setStories] = useState<profileInfo[]>([])
+    const [carregandoStories, setCarregandoStories] = useState(true);
 
     useEffect(() => {
         postServices.getTweets().then(response => {
-            let dados = response?.data
+            let dados = response?.data.post
+            console.log(dados)
             setTweets(dados);
+            setCarregandoTweets(false);
         })
         .catch(e => {
             console.log("Erro: ", e);
+            setCarregandoTweets(false);
         });
-    }, [])
+    }, [carregandoTweets])
 
     useEffect(() => {
         userServices.getUsers().then(response => {
-            let dados = response?.data
+            let dados = response?.data.user
+            console.log(dados)
             setStories(dados)
+            setCarregandoStories(false);
         })
         .catch(e => {
             console.log("Erro: ", e);
+            setCarregandoStories(false);
         });
 
-    }, [])
+    }, [carregandoStories])
 
     return (
         <HomeDiv>
             <Cabecalho/>
             <Stories id="stories">
                 {stories.map((story) => (
-                    <Story nome={story.nome} foto={story.foto} />
+                    <Story nome={story.name} foto={AnaImg} />
                 ))
-                
                 }
             </Stories>
 
 
             <TweetSection>
-
                 {tweets.map((tweet : tweetInfo) => (
-                    <Tweet username={tweet.username}
-                    foto={tweet.foto}
-                    nickname={tweet.nickname} 
-                    nickLink={tweet.nickLink} 
-                    livro={tweet.livro} 
-                    texto={tweet.texto} 
-                    comentarios={tweet.comentarios} 
-                    retweets={tweet.retweets} 
-                    curtidas={tweet.curtidas} />
+                    <Tweet username={"Ana Clara"}
+                    foto={AnaImg}
+                    nickname={"@aninha_furacao"} 
+                    nickLink={""} 
+                    livro={tweet.bookTitle} 
+                    texto={tweet.content} 
+                    comentarios={tweet.commentCount} 
+                    retweets={tweet.repostCount} 
+                    curtidas={tweet.bookmarkCount} />
                 ))}
             </TweetSection>
         </HomeDiv>

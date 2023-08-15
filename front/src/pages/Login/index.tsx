@@ -19,8 +19,8 @@ import { AuthContext } from "../../contexts/auth";
 
 
 interface dadosLogin {
-  usuario: string;
-  senha: string;
+  email: string;
+  password: string;
 }
 
 export default function Login() {
@@ -32,7 +32,7 @@ export default function Login() {
     handleSubmit,
     formState: { errors },
     getValues,
-  } = useForm({ mode: "onSubmit", defaultValues: {usuario: 'Usuário', senha: 'Senha'} });
+  } = useForm({ mode: "onSubmit", defaultValues: {email: 'Email', password: 'Senha'} });
 
   
   const onSubmit = (data: dadosLogin) => {
@@ -57,7 +57,7 @@ export default function Login() {
         <TextLogin>Login</TextLogin>
         <Controller
           control={control}
-          name="usuario"
+          name="email"
           defaultValue=""
           render={({ field: { onChange, value } }) => (
             <InputContainer>
@@ -72,7 +72,7 @@ export default function Login() {
         
         <Controller
           control={control}
-          name="senha"
+          name="password"
           defaultValue=""
           render={({ field: { onChange, value } }) => (
             <InputContainer>

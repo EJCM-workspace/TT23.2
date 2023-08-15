@@ -2,6 +2,8 @@ import styled from "styled-components/native";
 import { globalStyles } from "./src/GlobalStyle/style";
 import Login from "./src/pages/Login";
 import { SafeAreaView } from "react-native";
+import AuthProvider from "./src/contexts/auth";
+import React from "react";
 
 const Container = styled(SafeAreaView)`
   margin-top: 20px;
@@ -13,7 +15,9 @@ const Container = styled(SafeAreaView)`
 export default function App() {
   return (
     <Container style={globalStyles.container}>
-      <Login />
+      <AuthProvider>
+        <Login />
+      </AuthProvider>
     </Container>
   );
 }

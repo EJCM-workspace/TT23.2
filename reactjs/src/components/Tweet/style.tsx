@@ -76,6 +76,10 @@ export const TweetText = styled.p `
     font-size: 3vw;
     font-weight: 700;
     color: ${global.colors.cinzaEscuro};
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    hyphens: auto;
+
 `;
 
 /*----------------------------------------------------------------------------*/
