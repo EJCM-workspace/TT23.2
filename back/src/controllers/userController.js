@@ -39,26 +39,22 @@ const show = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    validationResult(req).throw();
-    const { password } = req.body;
-    const hashSalt = Auth.generatePassword(password);
-    const hash = hashSalt.hash;
-    const salt = hashSalt.salt;
+    //validationResult(req).throw();
+    //const { password } = req.body;
+    //const hashSalt = Auth.generatePassword(password);
+    //const hash = hashSalt.hash;
+    //const salt = hashSalt.salt;
     let image = null;
     if (req.file){
       image = req.file.filename
     }
     
-    const newUser = {
-      moderator: req.body.moderator,
+    const newUser = { 
       name: req.body.name,
       phoneNumber: req.body.phoneNumber,
       email: req.body.email,
       cpf: req.body.cpf,
       image: req.body.image,
-      address: req.body.address,
-      salt: salt,
-      hash: hash,
     };
     const user = await User.create(newUser);
   //--
@@ -124,6 +120,25 @@ const destroy = async (req, res) => {
   }
 };
 
+const removerPhoto = async(req, res) => {
+    const { id } = req.params;
+    try {
+      const user = await User.findByPk(id);
+      const photo = user.dataValues.image;
+  
+  
+      await fsPromises.unlink(path.join(__dirname, "..", "..", "uploads", photo));
+      await User.update({photo: null}, {where: {id: id}});
+  
+      return res.status(200).send(newProduct);
+  
+    } catch (err) {
+      return res.status(500).json({message: "User not found"});
+    }
+  };
+  
+  
+
 
 
 module.exports = {
@@ -132,5 +147,6 @@ module.exports = {
   create,
   update,
   destroy,
+  removerPhoto,
   
 };
